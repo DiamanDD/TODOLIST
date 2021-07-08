@@ -1,10 +1,78 @@
+body{
+
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
 .x{
-    width: 10px;
-    height: 10px;
+    position: relative;
+    float: right;
+    width: 20px;
+    height: 20px;
     background-color: red;
     display: inline-block;
+
 }
+
+.x:after{
+    position: relative;
+    top:-15px;
+    left:2px;
+    font-size: 20px;
+    content: "X"; /* use the hex value here... */
+    color: aliceblue;
+
+
+}
+
 
 .qq{
     text-decoration: line-through;
 }
+.lili{
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 0;
+    font-size: 35px;
+    list-style-type: none;
+
+    margin: 2px;
+    padding-left:10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px black;
+}
+.container{
+        width: 500px;
+    border-radius: 3px;
+
+
+
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /*border: 1px solid black;*/
+}
+.todo_input{
+
+    font-size: 35px;
+    border-radius: 3px;
+    box-shadow: 1px 1px black;
+    margin: 2px;
+    height: 28px;
+    width: 85%;
+}
+
+.todo_btn{
+    height: 38px;
+    width: 15%;
+    border-radius: 10px;
+    box-shadow: 1px 1px black;
+    font-size: 20px;
+}
+
+.todo_elements{
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid black;*/
+    width: 500px;
+    margin:  auto;
+}
+

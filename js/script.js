@@ -1,17 +1,13 @@
 "use strict";
 
-// считываем поле ввода
-this.onclick = getElementstrike
-
+document.querySelector(".todo_btn").onclick=readInput;
 
 function readInput() {
     let data = document.querySelector(".todo_input").value;
     createElement(data)
 }
 
-
 function createElement(data) {
-
     // если поле не пустое
     if (data != "") {
         // создаем элемент списка
@@ -27,25 +23,25 @@ function createElement(data) {
         addElemHtml(elemLi)
     }
 }
-
 function creatLi() {
     let elemLi = document.createElement("li")
     elemLi.className = "lili"
-    console.log("вызов1")
+    elemLi.onclick=switchClass
+
     return elemLi
 }
 
 function createClose() {
     let btnClose = document.createElement("div")
     btnClose.className = "x"
-    console.log("вызов2")
+    btnClose.onclick=removeItem
+
     return btnClose
 }
 
 function addText(elemLi, data) {
-    elemLi.innerHTML = data;
+    elemLi.innerText = data;
     return elemLi
-
 }
 
 function addBtnClose(elemLi, btnClose) {
@@ -57,30 +53,17 @@ function addElemHtml(elemLi) {
     document.querySelector(".todo_elements").append(elemLi)
 }
 
-// зачеркивание
-function getElementstrike(){
-    let elemClass=event.target.className
-     strikethrough(elemClass)
+
+function removeItem() {
+
+    event.target.parentNode.remove();
+}
+
+function switchClass(){
+    event.target.classList.toggle("qq")
 }
 
 
-
-
-function strikethrough(elemClass) {
-// если кликнули на крестик, удаляем родителя
-    switch (elemClass) {
-        case "x":
-            event.target.parentNode.remove();
-            break;
-        case "lili":
-            event.target.classList.toggle("qq");
-            break;
-        case "qq":
-            event.target.classList.toggle("qq")
-            break
-    }
-
-}
 
 
 
