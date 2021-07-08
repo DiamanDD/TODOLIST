@@ -1,0 +1,10 @@
+.x{
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    display: inline-block;
+}
+
+.qq{
+    text-decoration: line-through;
+}
