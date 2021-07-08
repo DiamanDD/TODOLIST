@@ -2,6 +2,7 @@ body{
 
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
+/* про название классов я уже писал */
 .x{
     position: relative;
     float: right;
@@ -39,6 +40,8 @@ body{
     border-radius: 3px;
     box-shadow: 1px 1px black;
 }
+/* выровняй код либо сам, либо автовыравниванием ctrl+alt+L */
+/* удали неиспользуемые стили , которые у тебя закоменчены */
 .container{
         width: 500px;
     border-radius: 3px;
@@ -48,6 +51,7 @@ body{
     margin: auto;
     display: flex;
     flex-direction: row;
+    
     /*border: 1px solid black;*/
 }
 .todo_input{
