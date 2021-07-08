@@ -6,7 +6,7 @@ function readInput(){
     upp(data)
 }
 
-
+//createElement??
 function upp(data) {
 
    // если поле не пустое
